@@ -1,0 +1,406 @@
+.Session1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding: 30px 0;
+    z-index: 1;
+}
+.Session1 > div:first-child > a:first-child{
+    color: var(--theam-color);
+}
+.Session1>div>a>img {
+    width: 300px;
+    height: 150px;
+    margin-left: 2vw;
+    background-color: transparent;
+}
+
+.Session1>div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.Session1>div:nth-child(3) {
+    display: none;
+    background-color: var(--light-gray-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.Session1>div:nth-child(2)>a {
+    padding: 5px 20px;
+    background-color: var(--light-gray-color);
+    border-radius: 5px;
+    margin: 0 15px;
+    border: var(--Box-Border);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Session1div2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -8rem;
+}
+
+.Session1div2>div {
+    width: 50vw;
+}
+
+.Session1div2>div:nth-child(1) {
+    margin-left: 30px;
+}
+
+.Session1div2>div>img {
+    width: 100%;
+    background-color: transparent;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+.Heading{
+    background-image: url('/Photos/bgbar.svg');
+    background-color: transparent;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+.Heading > span {
+    background-color: transparent;
+}
+@-webkit-keyframes up-down {
+    0% {
+        -webkit-transform: translateY(10px);
+                transform: translateY(10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+}
+@keyframes up-down {
+    0% {
+        -webkit-transform: translateY(10px);
+                transform: translateY(10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(-10px);
+                transform: translateY(-10px);
+    }
+}
+
+.Session1div2>div>div:nth-child(1) {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.Session1div2>div>div:nth-child(2) {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: bolder;
+}
+
+.Session1div2>div>div:nth-child(3) {
+    margin-top: 4rem;
+}
+
+.Session1div2>div>div:nth-child(3)>a {
+    font-size: 1rem;
+    background-color: var(--theam-color);
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.Session1div2>div>div:nth-child(3)>a:nth-child(1) {
+    background-color: var(--light-gray-color);
+    border: var(--Box-Border);
+    color: var(--text-color);
+}
+
+.Heading {
+    color: var(--text-color);
+    font-size: 3rem;
+    margin-top: -4rem;
+    text-align: center;
+}
+
+.Heading>span {
+    color: var(--theam-color);
+}
+
+.PopUp {
+    position: absolute;
+    width: 200px;
+    border-radius: 10px;
+    border: var(--Box-Border);
+    top: 0;
+    z-index: 100;
+    right: 0;
+    margin: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: self-start;
+        -ms-flex-align: self-start;
+            align-items: self-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.open {
+    -webkit-animation: slideInFromTop 01s ease-in-out;
+            animation: slideInFromTop 01s ease-in-out;
+}
+
+@-webkit-keyframes slideInFromTop {
+    0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+}
+
+.PopUp>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+}
+
+.PopUp>a,
+.PopUp>div>a {
+    padding: 5px 20px;
+    background-color: var(--light-gray-color);
+    border-radius: 5px;
+    margin: 5px 15px;
+    border: var(--Box-Border);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.PopUp>div>div {
+    background-color: var(--theam-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    .Session1>div>a>img {
+        width: 200px;
+    }
+
+    .Session1>div:nth-child(2)>a {
+        padding: 7px 15px;
+        border-radius: 5px;
+    }
+
+    .Session1div2 {
+        margin-top: -4rem;
+    }
+
+    .Session1div2>div>div:nth-child(1) {
+        font-size: 2.3rem;
+    }
+
+    .Session1div2>div>div:nth-child(2) {
+        font-size: 1.9rem;
+    }
+
+    .Session1div2>div>div:nth-child(3) {
+        margin-top: 3rem;
+    }
+
+    .Heading {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .Heading {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .Session1div2>div>div:nth-child(1) {
+        font-size: 2rem;
+    }
+
+    .Session1div2>div>div:nth-child(2) {
+        font-size: 1.6rem;
+    }
+
+    .Session1div2>div>div:nth-child(3) {
+        margin-top: 2rem;
+    }
+
+    .Session1div2>div>div:nth-child(3)>a {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .Session1>div:nth-child(2) {
+        display: none;
+    }
+    
+
+    .Session1div2>div>div:nth-child(1) {
+        font-size: 3rem;
+    }
+
+    .Session1div2>div>div:nth-child(2) {
+        font-size: 2.5rem;
+    }
+
+    .Session1div2 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .Session1div2>div:nth-child(1) {
+        position: relative;
+        z-index: 10;
+        margin-left: 0;
+        width: 100vw;
+    }
+
+    .Session1div2>div:nth-child(2) {
+        position: relative;
+        z-index: 5;
+        width: 70vw;
+        margin-top: -5rem;
+    }
+    .Heading{
+        height: 100px;
+    }
+
+    .Session1>div:nth-child(3) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .Session1div2>div>div:nth-child(1) {
+        font-size: 2.5rem;
+    }
+
+    .Session1div2>div>div:nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .Session1div2>div:nth-child(2) {
+        width: 90vw;
+    }
+
+    .Session1div2>div:nth-child(2) {
+        margin-top: -4rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Heading {
+        font-size: 1.5rem;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .Session1div2>div>div:nth-child(1) {
+        font-size: 2rem;
+    }
+
+    .Session1div2>div>div:nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+    .Session1div2>div:nth-child(2) {
+        width: 100vw;
+    }
+
+    .Session1div2>div:nth-child(2) {
+        margin-top: -3rem;
+    }
+
+    .Session1>div>a>img {
+        height: 75px;
+    }
+
+    .Heading {
+        margin-top: -3rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .Session1div2>div>div:nth-child(3) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .Session1div2>div>div:nth-child(3)>a {
+        margin: 5px 15px;
+        border-radius: 5px;
+        font-size: 0.6rem;
+    }
+    .PopUp > a,.PopUp > div > a{
+        margin: 5px 15px;
+        border-radius: 5px;
+        font-size: 0.6rem;
+    }
+}
